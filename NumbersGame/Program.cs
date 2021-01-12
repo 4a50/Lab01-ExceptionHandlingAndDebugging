@@ -33,15 +33,17 @@ namespace NumbersGame
                 Console.WriteLine($"Your Array size is: {calcArray.Length}");
                 Console.Write($"The numbers in the array are ");
                 
-                //iterated through the array
+                //iterated through the array to display the values
                 for (int i = 0; i < calcArray.Length; i++)
                 {
+                    //if not at the end of the array
                     if (i != calcArray.Length - 1)
                     {
                         Console.Write($"{calcArray[i]}, ");
                     }
                      else
                     {
+                        //if you are at the end, don't place a comma
                         Console.WriteLine($"{calcArray[i]}");
                     }
                 }
