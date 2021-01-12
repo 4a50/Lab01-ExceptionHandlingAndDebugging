@@ -18,7 +18,8 @@ namespace NumbersGame
 
         static void StartSequence()
         {
-            Console.WriteLine("Enter a number greater that zero");            
+            Console.WriteLine("Welcome to my game!  Let's do some math!");
+            Console.WriteLine("Please enter a number greater that zero");            
             string userInput = Console.ReadLine();
             try
             {
@@ -32,6 +33,7 @@ namespace NumbersGame
                 Console.WriteLine($"Your Array size is: {calcArray.Length}");
                 Console.Write($"The numbers in the array are ");
                 
+                //iterated through the array
                 for (int i = 0; i < calcArray.Length; i++)
                 {
                     if (i != calcArray.Length - 1)
@@ -44,9 +46,13 @@ namespace NumbersGame
                     }
                 }
                 Console.WriteLine($"The sum of the array is {sumArray}");
+                
+                // since the multiplyers aren't passed out of the method, had to solve for x to get the other multiplyer
                 int multiplyer = product / sumArray;
                 Console.WriteLine($"{sumArray} * {multiplyer} = {product}");
+                // divided was not passed out of the method, so solved for x to display the value.
                 int dividend = product / Convert.ToInt32(quotient);
+                
                 Console.WriteLine($"{product} / {dividend} = {quotient}");
 
 
@@ -99,7 +105,7 @@ namespace NumbersGame
             {
                 Console.WriteLine($"Please select a random number between 1 and {intArr.Length}");
                 string userString = Console.ReadLine();
-                int userIdx = Convert.ToInt32(userString);
+                int userIdx = Convert.ToInt32(userString) - 1;
                 int product = sum * intArr[userIdx];
                 return product;
             }
