@@ -16,7 +16,3 @@ It has not been published, therfore must be run in Visual Studio
  + Open VS Studio
  + Load LAB01.sln
  + Run Debug, interface through console.
-
-
-
-

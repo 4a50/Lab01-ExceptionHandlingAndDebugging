@@ -14,6 +14,10 @@ namespace NumbersGame
             {
                 Console.WriteLine("Hmm.  Something went wrong when starting the game: " + e.Message);
             }
+            finally
+            {
+                Console.WriteLine("Program is Complete");
+            }
         }
 
         static void StartSequence()
